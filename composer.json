@@ -1,9 +1,15 @@
 {
-    "name": "laravel/laravel",
+    "name": "gomes/buzzvel",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Buzzvel list hotels.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "João Antônio Gomes",
+            "email": "joaoantoniog96@gmail.com"
+        }
+    ],
     "require": {
         "php": "^7.4|^8.0",
         "fruitcake/laravel-cors": "^2.0",
