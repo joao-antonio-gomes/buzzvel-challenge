@@ -12,6 +12,7 @@ class HotelsList
     {
         $hotels = Http::get('https://buzzvel-interviews.s3.eu-west-1.amazonaws.com/hotels.json');
         $responseArray = json_decode($hotels, true);
+
         $hotelsArray = array_map(
             function ($hotel) {
                 return new Hotel($hotel[0], $hotel[1], $hotel[2], $hotel[3]);
@@ -25,8 +26,10 @@ class HotelsList
         return $this->hotels;
     }
 
-    public function getByLatitudeLongitude(): array
+    public function getByLatitudeLongitudePrice($latitude, $longitude,): array
     {
-
+        return array_filter($this->hotels, function ($hotel) use ($latitude, $longitude) {
+            return $hotel->getLatitude() <= $latitude && $hotel->getLongitude() <= $longitude;
+        });
     }
 }
