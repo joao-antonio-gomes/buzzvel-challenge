@@ -17,7 +17,6 @@
         "laravel/framework": "^8.54",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "gomes/buzzvel":"dev-master@dev",
         "ext-json": "*"
     },
     "require-dev": {
@@ -65,12 +64,6 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/joao-antonio-gomes/buzzvel-challenge"
-        }
-    ]
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
