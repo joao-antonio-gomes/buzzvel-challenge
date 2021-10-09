@@ -1,5 +1,5 @@
 {
-    "name": "laravel/laravel",
+    "name": "gomes/buzzvel",
     "type": "project",
     "description": "Buzzvel list hotels.",
     "keywords": ["framework", "laravel"],
